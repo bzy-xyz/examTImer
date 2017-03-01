@@ -1,0 +1,17 @@
+{
+  "name": "examtimer",
+  "version": "1.0.0",
+  "description": "An exam timer that ticks at preset intervals.",
+  "main": "timer.js",
+  "dependencies": {
+    "d3": "^4.5.0",
+    "jquery": "^3.1.1",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "browserify timer_main.js -o timer.js; firefox timer.html"
+  },
+  "author": "Ben Z. Yuan",
+  "license": "ISC"
+}

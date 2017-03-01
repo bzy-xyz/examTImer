@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fuzzy timer</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body style="margin:0">
+    <div id="timerSetup">
+      <input id="timerLength" type="text" value="3600"/>
+      <button id="startButton">Start</button>
+    </div>
+    <div id="timerRunning" style="display:none">
+    <svg id="timer" viewbox="-960 -540 1920 1080">
+
+      <path id="pie" fill="blue" stroke-width="0" x="0" y="0"></path>
+      <text id="countdownText" x="0" y="0" text-anchor="middle" dominant-baseline="middle" font-size="200px" font-family="sans-serif">0</text>
+      <foreignObject x="-50" y="200" width="100" height="50">
+        <button id="resetButton" style="width:100%;height:100%">Reset</button>
+      </foreignObject>
+
+    </svg>
+  </div>
+
+  <script src="timer.js"></script>
+
+  </body>
+</html>
